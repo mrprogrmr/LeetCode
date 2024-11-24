@@ -5,14 +5,16 @@ class Solution(object):
         :type digits: List[int]
         :rtype: List[int]
         """
-        carry = 1
+        # Traverse the list from right to left,
         for i in range(len(digits) - 1, -1, -1):
-            sum_val = digits[i] + carry
-            digits[i] = sum_val % 10
-            carry = sum_val // 10
-        if carry > 0:
-            digits.insert(0, carry)
-        return digits
+            # if the current digit is 9, set it to 0
+            if digits[i] == 9:
+                digits[i] = 0
+            else:
+                # Otherwise, increment the current digit and break the loop
+                digits[i] += 1
+                return digits
+        return [1] + digits  # If all digits were 9, add a new 1 at the beginning of the list
     
 # Test function
 
