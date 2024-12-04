@@ -1,5 +1,5 @@
 
-public class Main {
+public class Binsearch {
 
     public static void main(String[] args) {
         int[] intArray = {-22, -15, 1, 7, 20, 35, 55};
