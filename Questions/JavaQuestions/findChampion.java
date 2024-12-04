@@ -1,5 +1,12 @@
-class Solution {
-    public int findChampion(int n, int[][] edges) {
+package JavaQuestions;
+
+class FindChampion {
+    public static void main(String[] args) {
+//        System.out.println(findChampion(2 [23 56]));
+    }
+
+
+    public static int findChampion(int n, int[][] edges) {
         int[] in_degree = new int[n]; // Track the number of incoming edges for each node.
 
         for (int[] edge : edges) {

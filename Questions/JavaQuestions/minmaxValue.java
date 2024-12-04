@@ -1,7 +1,8 @@
+package JavaQuestions;
 
 import java.util.Arrays;
 
-class Solution {
+class MinMaxValue {
     public int minDifference(int[] A) {
         int n = A.length, res = Integer.MAX_VALUE;
         if (n < 5) return 0;
